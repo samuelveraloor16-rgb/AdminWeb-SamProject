@@ -1,0 +1,102 @@
+:root {
+  /* Paleta institucional SamProject (fija) */
+  --color-primary: #245b4a;
+  --color-secondary: #dce9df;
+  --color-tertiary: #d5c78e;
+  --color-background: #f7f8f5;
+  --color-text: #34413a;
+
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1.5rem;
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.layout__logo {
+  height: 40px;
+  width: auto;
+}
+
+.layout__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.layout__name span {
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.layout__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.layout__footer {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-secondary);
+  color: var(--color-text);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.page__title {
+  color: var(--color-primary);
+  font-size: 1.75rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.page__rule {
+  width: 4rem;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-tertiary);
+  margin: 0 auto 1rem;
+}
+
+.page__text {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.page__link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
